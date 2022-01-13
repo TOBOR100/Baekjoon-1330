@@ -1,18 +1,19 @@
 #include <iostream>
-#include <string> // To use stoi function.
+#include <string> 
 
 using namespace std;
 
 int main(){
     
-    string num[4];//ex)"1 3" contain space between 1 and 3. 
+    string num;
 
-    cin.ignore('\n');
-    getline(cin,num[4]);
+    getline(cin,num,'/');
 
-    int a = stoi(num[0]);
-    int b = stoi(num[2]);
+    char c = num[0];
+    char d = num[2];
 
+    int a = c-'0';
+    int b = d-'0';
 
     if (a > b){
 
